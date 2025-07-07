@@ -27,6 +27,11 @@ public class Pet {
 
     @Override
     public String toString() {
-        return "Pet id: " + id + " Nome: " + nome + " Tipo: " + tipo;
+        return """
+            Pet
+            ├─ ID: %d
+            ├─ Nome: %s
+            └─ Tipo: %s
+            """.formatted(id, nome, tipo);
     }
 }
